@@ -944,6 +944,36 @@ a:hover {
     gap: 40px;
 }
 
+/* Countdown Section */
+.countdown-section {
+    padding: 40px 0;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.countdown-section .container {
+    max-width: 1000px;
+}
+
+.countdown-heading {
+    color: var(--primary-blue);
+    margin-bottom: 30px;
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.countdown-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-blue);
+    transform: translateX(-50%);
+}
+
 .update-card {
     background-color: var(--white);
     padding: 40px 30px;
@@ -1006,31 +1036,66 @@ a:hover {
 /* Countdown Timer */
 .countdown-timer {
     display: flex;
-    justify-content: space-around;
-    margin: 30px 0;
+    justify-content: space-between;
+    margin: 40px 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--light-gray);
+    padding: 30px 0;
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 8px 24px var(--shadow-light);
 }
 
 .countdown-item {
     text-align: center;
-    padding: 12px 18px;
+    padding: 20px 25px;
+    flex: 1;
+    min-width: 0;
 }
 
 .countdown-number {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2.8rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: var(--primary-blue);
     display: block;
     line-height: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .countdown-label {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--dark-gray);
-    margin-top: 8px;
+    margin-top: 12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 600;
+}
+
+/* Responsive Countdown Timer */
+@media (max-width: 1200px) {
+    .countdown-number {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .countdown-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .countdown-number {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .countdown-number {
+        font-size: 1.6rem;
+    }
 }
 
 /* Schedule & Standings */
