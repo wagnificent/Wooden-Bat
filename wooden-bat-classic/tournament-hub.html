@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Hub - Wooden Bat Classic Updates</title>
+    <meta name="description" content="Get the latest updates, schedules, and standings for the Wooden Bat Classic adult baseball tournament.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Wooden Bat Classic Logo">
+                <div class="logo-text">
+                    <h1>Wooden Bat Classic</h1>
+                    <p>Since 1996</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="join-us.html">Join Us</a></li>
+                    <li><a href="the-classic.html">The Classic</a></li>
+                    <li><a href="tournament-hub.html" class="active">Tournament Hub</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header hub-header">
+            <div class="container">
+                <h1>Tournament Hub</h1>
+                <p>Latest updates, schedules, and standings for the 2026 Wooden Bat Classic</p>
+            </div>
+        </section>
+
+        <section class="hub-updates">
+            <div class="container">
+                <div class="updates-grid">
+                    <div class="update-card">
+                        <h3>📅 Tournament Dates</h3>
+                        <p><strong>January 19–24, 2026</strong></p>
+                        <p>Fort Myers, Florida</p>
+                        <p>6 beautiful baseball fields</p>
+                        <p>7 games guaranteed for every team</p>
+                    </div>
+
+                    <div class="update-card">
+                        <h3>⏰ Countdown to Tournament</h3>
+                        <div class="countdown-timer" id="countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="days">--</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="hours">--</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="minutes">--</span>
+                                <span class="countdown-label">Minutes</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="seconds">--</span>
+                                <span class="countdown-label">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="update-card">
+                        <h3>🏆 Latest News</h3>
+                        <div class="news-item">
+                            <h4>Registration Now Open!</h4>
+                            <p class="news-date">December 1, 2025</p>
+                            <p>Team and free agent registration for the 2026 tournament is now open. Early bird discounts available until December 31st.</p>
+                        </div>
+                        <div class="news-item">
+                            <h4>New Hotel Partners</h4>
+                            <p class="news-date">November 15, 2025</p>
+                            <p>We've added two new official hotel partners with special rates for tournament participants.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="schedule-standings">
+            <div class="container">
+                <div class="schedule-standings-grid">
+                    <div class="schedule-section">
+                        <h2>Tournament Schedule</h2>
+                        <p>All games played at Fort Myers Baseball Complex</p>
+
+                        <div class="schedule-tabs">
+                            <button class="schedule-tab-btn active" data-schedule="overview">Overview</button>
+                            <button class="schedule-tab-btn" data-schedule="30+">30+ Division</button>
+                            <button class="schedule-tab-btn" data-schedule="40+">40+ Division</button>
+                            <button class="schedule-tab-btn" data-schedule="50+">50+ Division</button>
+                        </div>
+
+                        <div class="schedule-content active" id="overview">
+                            <h3>Tournament Overview</h3>
+                            <div class="schedule-item">
+                                <div class="schedule-date">Sunday, January 19</div>
+                                <div class="schedule-details">
+                                    <p><strong>Registration & Check-in</strong></p>
+                                    <p>8:00 AM - 12:00 PM at Main Field</p>
+                                    <p>Opening Ceremonies: 1:00 PM</p>
+                                    <p>First games begin: 2:00 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="schedule-item">
+                                <div class="schedule-date">Monday, January 20</div>
+                                <div class="schedule-details">
+                                    <p><strong>Pool Play Begins</strong></p>
+                                    <p>Games from 8:00 AM - 8:00 PM</p>
+                                    <p>All divisions in action</p>
+                                </div>
+                            </div>
+
+                            <div class="schedule-item">
+                                <div class="schedule-date">Friday, January 24</div>
+                                <div class="schedule-details">
+                                    <p><strong>Championship Games</strong></p>
+                                    <p>30+ Division Final: 10:00 AM</p>
+                                    <p>40+ Division Final: 1:00 PM</p>
+                                    <p>50+ Division Final: 4:00 PM</p>
+                                    <p>Awards Ceremony: 7:00 PM</p>
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn btn-secondary">Download Full Schedule (PDF)</a>
+                        </div>
+
+                        <div class="schedule-content" id="30+">
+                            <h3>30+ Division Schedule</h3>
+                            <p>Detailed schedule coming soon...</p>
+                        </div>
+
+                        <div class="schedule-content" id="40+">
+                            <h3>40+ Division Schedule</h3>
+                            <p>Detailed schedule coming soon...</p>
+                        </div>
+
+                        <div class="schedule-content" id="50+">
+                            <h3>50+ Division Schedule</h3>
+                            <p>Detailed schedule coming soon...</p>
+                        </div>
+                    </div>
+
+                    <div class="standings-section">
+                        <h2>Current Standings</h2>
+                        <p>Updated in real-time during tournament</p>
+
+                        <div class="standings-tabs">
+                            <button class="standings-tab-btn active" data-standings="30+">30+ Division</button>
+                            <button class="standings-tab-btn" data-standings="40+">40+ Division</button>
+                            <button class="standings-tab-btn" data-standings="50+">50+ Division</button>
+                        </div>
+
+                        <div class="standings-content active" id="standings-30+">
+                            <table class="standings-table">
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Team</th>
+                                        <th>W</th>
+                                        <th>L</th>
+                                        <th>T</th>
+                                        <th>Pct</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Sunshine Sluggers</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>.833</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Fort Myers Fire</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>.667</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Beach Bats</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>0</td>
+                                        <td>.500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Palm Power</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                        <td>0</td>
+                                        <td>.333</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Gulf Coast Giants</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>0</td>
+                                        <td>.167</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="standings-content" id="standings-40+">
+                            <table class="standings-table">
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Team</th>
+                                        <th>W</th>
+                                        <th>L</th>
+                                        <th>T</th>
+                                        <th>Pct</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Veteran Vikings</td>
+                                        <td>4</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>.750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Silver Sluggers</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>.667</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Forty & Fabulous</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>0</td>
+                                        <td>.500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Old Schoolers</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                        <td>0</td>
+                                        <td>.333</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="standings-content" id="standings-50+">
+                            <table class="standings-table">
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Team</th>
+                                        <th>W</th>
+                                        <th>L</th>
+                                        <th>T</th>
+                                        <th>Pct</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Golden Glovers</td>
+                                        <td>5</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                        <td>.917</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Senior Swingers</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>.600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Vintage Veterans</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                        <td>0</td>
+                                        <td>.333</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="field-map">
+            <div class="container">
+                <h2>Field Locations & Map</h2>
+                <div class="map-container">
+                    <div class="field-info">
+                        <h3>Fort Myers Baseball Complex</h3>
+                        <p>123 Diamond Drive, Fort Myers, FL 33901</p>
+                        <p>6 professional-quality baseball fields</p>
+                        <p>Ample parking and concessions available</p>
+                        <a href="#" class="btn btn-secondary">Get Directions</a>
+                    </div>
+                    <div class="map-placeholder">
+                        <img src="images/field-map.jpg" alt="Fort Myers Baseball Complex Map">
+                        <p class="map-caption">Interactive map coming soon</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hub-cta">
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p>Get the latest tournament news, schedule changes, and results delivered straight to your inbox.</p>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                    <label class="checkbox-label">
+                        <input type="checkbox" required>
+                        I agree to receive tournament updates and news
+                    </label>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="Wooden Bat Classic Logo">
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="join-us.html">Join Us</a></li>
+                            <li><a href="the-classic.html">The Classic</a></li>
+                            <li><a href="tournament-hub.html">Tournament Hub</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <address>
+                            Fort Myers, FL<br>
+                            info@woodenbatclassic.com<br>
+                            (239) 555-1234
+                        </address>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wooden Bat Classic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
