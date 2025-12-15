@@ -190,7 +190,7 @@ a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(26, 35, 126, 0.8), rgba(26, 35, 126, 0.8)),
+    background: linear-gradient(rgba(26, 35, 126, 0.9), rgba(26, 35, 126, 0.9)),
                 url('../images/hero-bg.jpg') center/cover no-repeat;
     height: 80vh;
     min-height: 600px;
@@ -203,7 +203,7 @@ a:hover {
 .hero-content {
     max-width: 800px;
     padding: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: var(--border-radius);
     backdrop-filter: blur(5px);
 }
@@ -212,20 +212,22 @@ a:hover {
     font-size: 3.5rem;
     color: var(--light-text);
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .hero .subtitle {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
-    opacity: 0.9;
+    opacity: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .hero .dates {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     font-style: italic;
-    opacity: 0.8;
+    opacity: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Buttons */
@@ -400,7 +402,7 @@ a:hover {
 
 /* Page Header */
 .page-header {
-    background: linear-gradient(rgba(26, 35, 126, 0.9), rgba(26, 35, 126, 0.9)),
+    background: linear-gradient(rgba(26, 35, 126, 0.95), rgba(26, 35, 126, 0.95)),
                 url('../images/page-header-bg.jpg') center/cover no-repeat;
     height: 40vh;
     min-height: 300px;
@@ -413,22 +415,22 @@ a:hover {
 .page-header h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .page-header p {
     font-size: 1.3rem;
-    opacity: 0.9;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .legacy-header {
-    background: linear-gradient(rgba(139, 38, 53, 0.9), rgba(139, 38, 53, 0.9)),
+    background: linear-gradient(rgba(139, 38, 53, 0.95), rgba(139, 38, 53, 0.95)),
                 url('../images/legacy-bg.jpg') center/cover no-repeat;
 }
 
 .hub-header {
-    background: linear-gradient(rgba(26, 35, 126, 0.9), rgba(26, 35, 126, 0.9)),
+    background: linear-gradient(rgba(26, 35, 126, 0.95), rgba(26, 35, 126, 0.95)),
                 url('../images/hub-bg.jpg') center/cover no-repeat;
 }
 
@@ -1096,6 +1098,7 @@ a:hover {
     color: var(--light-text);
     margin-bottom: 20px;
     font-size: 1.3rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .footer-section ul {
@@ -1108,20 +1111,23 @@ a:hover {
 
 .footer-section a {
     color: var(--light-text);
-    opacity: 0.8;
+    opacity: 0.9;
     transition: opacity var(--transition-speed) ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .footer-section a:hover {
     opacity: 1;
     color: var(--accent-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .footer-section address {
     font-style: normal;
     color: var(--light-text);
-    opacity: 0.8;
+    opacity: 0.9;
     line-height: 1.8;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .social-icons {
@@ -1135,10 +1141,11 @@ a:hover {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: 50%;
     color: var(--light-text);
     transition: all var(--transition-speed) ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .social-icons a:hover {
@@ -1149,9 +1156,10 @@ a:hover {
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 0.9rem;
-    opacity: 0.7;
+    opacity: 0.8;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Animations */
