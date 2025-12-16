@@ -398,6 +398,26 @@ a:hover {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-logo {
+    height: 200px;
+    width: auto;
+    margin-bottom: 2rem;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius-md);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text-content {
+    width: 100%;
 }
 
 .hero h1 {
@@ -444,13 +464,13 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: var(--royal-blue);
+    background-color: var(--crimson-red);
     color: var(--white);
     box-shadow: 0 4px 12px var(--shadow-medium);
 }
 
 .btn-primary:hover {
-    background-color: var(--crimson-red);
+    background-color: var(--royal-blue);
     transform: translateY(-2px);
     box-shadow: 0 6px 16px var(--shadow-heavy);
 }
@@ -491,6 +511,7 @@ a:hover {
     gap: 16px;
     flex-wrap: wrap;
     margin-top: 1rem;
+    justify-content: center;
 }
 
 /* Intro Section */
@@ -1792,6 +1813,23 @@ a:hover {
 
     .hero .subtitle {
         font-size: 1.2rem;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-logo {
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-text-content {
+        text-align: center;
+    }
+
+    .cta-buttons {
+        justify-content: center;
     }
 
     .stats-grid {
