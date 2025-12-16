@@ -162,7 +162,7 @@ a:hover {
 
 /* Header & Navigation */
 .header {
-    background-color: var(--white);
+    background-color: var(--royal-blue);
     box-shadow: 0 1px 5px var(--shadow-light);
     position: sticky;
     top: 0;
@@ -186,19 +186,18 @@ a:hover {
 .logo img {
     height: 50px;
     width: auto;
-    filter: brightness(0) saturate(100%);
 }
 
 .logo-text h1 {
     font-size: 1.4rem;
-    color: var(--dark-gray);
+    color: var(--white);
     margin-bottom: 0;
     font-weight: 600;
 }
 
 .logo-text p {
     font-size: 0.8rem;
-    color: var(--royal-blue);
+    color: var(--white);
     margin-bottom: 0;
     font-style: normal;
     font-weight: 500;
@@ -212,7 +211,7 @@ a:hover {
 }
 
 .main-nav a {
-    color: var(--black);
+    color: var(--white);
     font-weight: 500;
     font-size: 0.95rem;
     padding: 10px 15px;
@@ -222,8 +221,8 @@ a:hover {
 }
 
 .main-nav a:hover, .main-nav a.active {
-    background-color: rgba(0, 51, 141, 0.1);
-    color: var(--royal-blue);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
 }
 
 .main-nav a::after {
@@ -254,7 +253,7 @@ a:hover {
     display: block;
     width: 25px;
     height: 2px;
-    background-color: var(--black);
+    background-color: var(--white);
     position: relative;
     transition: all var(--transition-speed) var(--transition-cubic);
     border-radius: 1px;
@@ -266,7 +265,7 @@ a:hover {
     position: absolute;
     width: 25px;
     height: 2px;
-    background-color: var(--black);
+    background-color: var(--white);
     transition: all var(--transition-speed) var(--transition-cubic);
     border-radius: 1px;
 }
@@ -1551,8 +1550,8 @@ a:hover {
 
 /* Footer */
 .footer {
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--royal-blue);
+    color: var(--white);
     padding: 80px 0 30px;
 }
 
@@ -1566,7 +1565,6 @@ a:hover {
 .footer-logo img {
     height: 80px;
     width: auto;
-    filter: brightness(0) invert(1);
 }
 
 .footer-links {
@@ -1576,7 +1574,7 @@ a:hover {
 }
 
 .footer-section h3 {
-    color: var(--black);
+    color: var(--white);
     margin-bottom: 25px;
     font-size: 1.4rem;
     position: relative;
@@ -1590,7 +1588,7 @@ a:hover {
     left: 0;
     width: 40px;
     height: 2px;
-    background-color: var(--primary-blue);
+    background-color: var(--white);
 }
 
 .footer-section ul {
@@ -1602,7 +1600,7 @@ a:hover {
 }
 
 .footer-section a {
-    color: var(--black);
+    color: var(--white);
     opacity: 0.9;
     transition: all var(--transition-speed) var(--transition-cubic);
     font-weight: 500;
@@ -1610,13 +1608,13 @@ a:hover {
 
 .footer-section a:hover {
     opacity: 1;
-    color: var(--primary-blue);
+    color: var(--white);
     transform: translateX(5px);
 }
 
 .footer-section address {
     font-style: normal;
-    color: var(--black);
+    color: var(--white);
     opacity: 0.9;
     line-height: 1.8;
 }
@@ -1633,27 +1631,27 @@ a:hover {
     justify-content: center;
     width: 48px;
     height: 48px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    color: var(--black);
+    color: var(--white);
     transition: all var(--transition-speed) var(--transition-cubic);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .social-icons a:hover {
-    background-color: var(--primary-blue);
+    background-color: var(--white);
     transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 30px;
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 0.95rem;
     opacity: 0.8;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* Animations */
