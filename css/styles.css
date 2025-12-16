@@ -151,7 +151,7 @@ a:hover {
 .intro, .stats, .testimonials,
 .legacy-story, .timeline, .photo-archive, .legacy-cta,
 .registration-tabs, .registration-cta,
-.hub-updates, .schedule-standings, .field-map, .hub-cta {
+.hub-tabs, .hub-updates, .schedule-standings, .field-map, .hub-cta {
     padding: 40px 0;
     background-color: var(--light-grey);
 }
@@ -1005,6 +1005,12 @@ a:hover {
     font-size: 1rem;
     font-weight: 600;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Hub Tabs */
+.hub-tabs {
+    padding: 60px 0;
+    background-color: var(--light-gray);
 }
 
 /* Hub Updates */
