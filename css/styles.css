@@ -390,7 +390,7 @@ a:hover {
 /* Intro Section */
 .intro {
     padding: 80px 0;
-    background-color: var(--white);
+    background-color: var(--light-grey);
     border-bottom: 1px solid var(--light-grey);
 }
 
@@ -453,7 +453,7 @@ a:hover {
 /* Testimonials */
 .testimonials {
     padding: 80px 0;
-    background-color: var(--white);
+    background-color: var(--light-grey);
 }
 
 .testimonials h2 {
@@ -818,7 +818,7 @@ a:hover {
 /* Timeline */
 .timeline {
     padding: 80px 0;
-    background-color: var(--white);
+    background-color: var(--light-grey);
 }
 
 .timeline-container {
@@ -893,7 +893,7 @@ a:hover {
 /* Photo Archive */
 .photo-archive {
     padding: 80px 0;
-    background-color: var(--white);
+    background-color: var(--light-grey);
 }
 
 .archive-filters {
@@ -1147,7 +1147,7 @@ a:hover {
 /* Schedule & Standings */
 .schedule-standings {
     padding: 80px 0;
-    background-color: var(--white);
+    background-color: var(--light-grey);
 }
 
 .schedule-standings-grid {
