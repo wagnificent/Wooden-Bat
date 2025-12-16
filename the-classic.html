@@ -14,53 +14,47 @@
 <body class="classic-page">
     <header class="header">
         <div class="container">
-            <div class="logo">
-                <img src="WBC Logo.png" alt="Wooden Bat Classic Logo">
-                <div class="logo-text">
-                    <h1>Wooden Bat Classic</h1>
-                    <p>Since 1996</p>
-                </div>
+            <div class="logo-text">
+                <h1>WBC</h1>
+                <p>Since 1996</p>
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="join-us.html">Join Us</a></li>
-                    <li><a href="the-classic.html" class="active">The Classic</a></li>
-                    <li><a href="tournament-hub.html">Tournament Hub</a></li>
+                    <div class="nav-left">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="the-classic.html" class="active">About</a></li>
+                        <li><a href="tournament-hub.html">Tournament Hub</a></li>
+                    </div>
+                    <div class="nav-right">
+                        <li><a href="join-us.html" class="register-btn">Register Now</a></li>
+                    </div>
                 </ul>
             </nav>
+            <div class="nav-countdown" id="countdown">
+                <div class="nav-countdown-items">
+                    <div class="nav-countdown-item">
+                        <span class="nav-countdown-number" id="days">--</span>
+                        <span class="nav-countdown-label">Days</span>
+                    </div>
+                    <div class="nav-countdown-item">
+                        <span class="nav-countdown-number" id="hours">--</span>
+                        <span class="nav-countdown-label">Hours</span>
+                    </div>
+                    <div class="nav-countdown-item">
+                        <span class="nav-countdown-number" id="minutes">--</span>
+                        <span class="nav-countdown-label">Minutes</span>
+                    </div>
+                    <div class="nav-countdown-item">
+                        <span class="nav-countdown-number" id="seconds">--</span>
+                        <span class="nav-countdown-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <span class="hamburger"></span>
             </button>
         </div>
     </header>
-
-    <div class="countdown-banner" id="countdown">
-        <div class="container">
-            <div class="countdown-content">
-                <span class="countdown-icon">⏰</span>
-                <span class="countdown-text">Countdown to Tournament: </span>
-                <div class="countdown-items">
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="days">--</span>
-                        <span class="countdown-label">Days</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="hours">--</span>
-                        <span class="countdown-label">Hours</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="minutes">--</span>
-                        <span class="countdown-label">Minutes</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="seconds">--</span>
-                        <span class="countdown-label">Seconds</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <main>
         <section class="page-header legacy-header">
