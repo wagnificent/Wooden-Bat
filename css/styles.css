@@ -1365,8 +1365,8 @@ a:hover {
 
 /* Footer */
 .footer {
-    background-color: var(--dark-blue);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--black);
     padding: 80px 0 30px;
 }
 
@@ -1390,7 +1390,7 @@ a:hover {
 }
 
 .footer-section h3 {
-    color: var(--white);
+    color: var(--black);
     margin-bottom: 25px;
     font-size: 1.4rem;
     position: relative;
@@ -1416,7 +1416,7 @@ a:hover {
 }
 
 .footer-section a {
-    color: var(--white);
+    color: var(--black);
     opacity: 0.9;
     transition: all var(--transition-speed) var(--transition-cubic);
     font-weight: 500;
@@ -1430,7 +1430,7 @@ a:hover {
 
 .footer-section address {
     font-style: normal;
-    color: var(--white);
+    color: var(--black);
     opacity: 0.9;
     line-height: 1.8;
 }
@@ -1447,12 +1447,12 @@ a:hover {
     justify-content: center;
     width: 48px;
     height: 48px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    color: var(--white);
+    color: var(--black);
     transition: all var(--transition-speed) var(--transition-cubic);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .social-icons a:hover {
@@ -1464,10 +1464,10 @@ a:hover {
 .footer-bottom {
     text-align: center;
     padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
     font-size: 0.95rem;
     opacity: 0.8;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 /* Animations */
