@@ -205,4 +205,82 @@ document.addEventListener('DOMContentLoaded', function() {
             link.classList.add('active');
         }
     });
+
+    // News Carousel Functionality
+    const carouselContainer = document.querySelector('.carousel-container');
+    const carouselSlides = document.querySelectorAll('.carousel-slide');
+    const carouselPrev = document.querySelector('.carousel-prev');
+    const carouselNext = document.querySelector('.carousel-next');
+    const indicators = document.querySelectorAll('.indicator');
+
+    if (carouselContainer && carouselSlides.length > 0) {
+        let currentSlide = 0;
+        const totalSlides = carouselSlides.length;
+
+        function showSlide(index) {
+            // Hide all slides
+            carouselSlides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+
+            // Remove active class from all indicators
+            indicators.forEach(indicator => {
+                indicator.classList.remove('active');
+            });
+
+            // Show current slide
+            carouselSlides[index].classList.add('active');
+            indicators[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let nextIndex = currentSlide + 1;
+            if (nextIndex >= totalSlides) {
+                nextIndex = 0;
+            }
+            showSlide(nextIndex);
+        }
+
+        function prevSlide() {
+            let prevIndex = currentSlide - 1;
+            if (prevIndex < 0) {
+                prevIndex = totalSlides - 1;
+            }
+            showSlide(prevIndex);
+        }
+
+        // Add event listeners
+        if (carouselNext) {
+            carouselNext.addEventListener('click', nextSlide);
+        }
+
+        if (carouselPrev) {
+            carouselPrev.addEventListener('click', prevSlide);
+        }
+
+        // Add indicator click events
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                showSlide(index);
+            });
+        });
+
+        // Auto-advance carousel every 5 seconds
+        let carouselInterval = setInterval(nextSlide, 5000);
+
+        // Pause on hover
+        if (carouselContainer) {
+            carouselContainer.addEventListener('mouseenter', () => {
+                clearInterval(carouselInterval);
+            });
+
+            carouselContainer.addEventListener('mouseleave', () => {
+                carouselInterval = setInterval(nextSlide, 5000);
+            });
+        }
+
+        // Initialize first slide
+        showSlide(0);
+    }
 });
