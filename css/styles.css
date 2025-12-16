@@ -131,6 +131,35 @@ a:hover {
     padding: 0 20px;
 }
 
+/* Card Container - White background for content sections */
+.card-container {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 4px 12px var(--shadow-light);
+    padding: 40px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all var(--transition-speed) var(--transition-cubic);
+}
+
+.card-container:hover {
+    box-shadow: 0 6px 16px var(--shadow-medium);
+    transform: translateY(-2px);
+}
+
+/* Adjust spacing for sections that now have card containers */
+.intro, .stats, .testimonials,
+.legacy-story, .timeline, .photo-archive, .legacy-cta,
+.registration-tabs, .registration-cta,
+.hub-updates, .schedule-standings, .field-map, .hub-cta {
+    padding: 40px 0;
+    background-color: var(--light-grey);
+}
+
+.countdown-section {
+    background-color: var(--light-grey);
+}
+
 /* Header & Navigation */
 .header {
     background-color: var(--white);
